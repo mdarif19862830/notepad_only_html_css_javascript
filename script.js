@@ -22,7 +22,7 @@ function createHomePage(){
   notepad.innerHTML = `<div class="note-links">
 <div class="webnote logo">123456789</div>
 <div onclick="addPageForNoteCreate()">
-<img src="./assets/note.png" class="nav-link" id="addFile">
+<img src="./note.png" class="nav-link" id="addFile">
 <label for="addFile" class="addnew">add note</label>
 </div>
 </div>
