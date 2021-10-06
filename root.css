@@ -1,0 +1,42 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+*:focus
+{
+  outline: none;
+}
+
+:root
+{
+  --a-primary-color: #00f7a9;
+  --body-bg-dark: #000000b9;
+  --t-c: #fff;
+  
+  
+}
+
+.webnote
+{
+  text-decoration: none;
+  color: var(--a-primary-color);
+}
+
+
+
+
+
+
+html
+{
+  scroll-behavior: smooth;
+  cursor: none;
+}
+

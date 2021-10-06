@@ -1,0 +1,207 @@
+
+@import url('./root.css');
+@import url('./animation.css');
+
+body
+{
+  background: var(--body-bg-dark);
+  min-height: 100vh;
+  color: var(--t-c);
+  padding: 20px 10px;
+}
+body,
+.welcome
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.welcome
+{
+  height: 100vh;
+  width: 60%;
+  background: transparent;
+  text-align: center;
+}
+.welcome .welcome_massage
+{
+  color: #fff;
+  animation: welcome_massage_anim 0.8s ease;
+}
+.note_top
+{
+  margin: 10px;
+  display: none;
+}
+.notepad,
+.additemDiv
+{
+  height: 60%;
+  min-width: 340px;
+  max-width: 440px;
+  margin: 0px auto;
+  background: #fff2;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+.note-links
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #0002;
+  box-shadow: 0 0 12 #0004;
+  min-height: 20px;
+  padding: 6px 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #333;
+}
+.note-links div
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff9;
+  border-radius: 5px;
+}
+.additemDiv .note-links
+{
+  justify-content: space-between;
+}
+.additemDiv .note-links div
+{
+  padding: 10px;
+  background: #fff2;
+  justify-content: space-around;
+  font-weight: 400;
+}
+.nav-link
+{
+  width: 35px;
+  background: transparent;
+  border-radius: 5px;
+  margin-left: 10px;
+  filter: grayscale(0.2);
+}
+.addnew
+{
+  padding: 10px;
+  color: #333;
+}
+#cursor
+{
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  mix-blend-mode: difference;
+  pointer-events: none;
+  background: transparent;
+  border-radius: 50%;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  padding: 0px;
+  transform: rotate(-120deg);
+}
+.notes
+{
+  width: 100%;
+  padding: 0 12px 0 12px;
+  min-height: 300px;
+  max-height: 700px;
+  margin-top: 65px;
+  overflow-y: scroll;
+}
+.under_note
+{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  flex-direction: column;
+  overflow: scroll;
+}
+.note_item
+{
+  background: linear-gradient(90deg, #00f7a940, #f321d740);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  color: #fff;
+  font-size: 17px;
+  min-height: 60px;
+  width: calc(100% - 0px);
+}
+.additemDiv .bottom
+{
+  text-align: justify;
+}
+.logo
+{
+  background: transparent !important;
+}
+.morebg
+{
+  padding: 5px 8px;
+  background: #fff2;
+  border-radius: 5px;
+}
+@media(max-width: 767.98px)
+{
+.welcome
+{
+  width: 100%;
+}
+}
+@media(max-width: 1023.98px)
+{
+.welcome
+{
+  width: 80%;
+}
+.notepad
+{
+  width: 90%;
+  height: 90%;
+}
+.notes
+{
+  max-height: 500px;
+}
+}
+.bottom
+{
+  border: none;
+  background: #0002;
+  border-radius: 5px;
+  resize: none;
+  color: #fff;
+  margin: 8px;
+  width: calc(100% - 20px);
+  padding: 10px;
+}
+.titleText
+{
+  margin-top: 65px;
+  min-height: 60px;
+}
+.paper
+{
+  margin-top: 0;
+  min-height: 300px;
+}
+.outofbtm
+{
+  margin-top: 65px;
+  display: block;
+  min-height: 100px;
+  max-height: 500px;
+  overflow-y: scroll;
+}
